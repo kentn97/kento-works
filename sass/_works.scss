@@ -1,0 +1,182 @@
+.works {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.isotope_filters {
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: 2px solid $gray;
+    border-radius: 5px;
+
+
+    &__btn {
+        border: none;
+        background: transparent;
+        border-radius: 3px;
+        font-size: 1.8rem;
+        padding: 1.5rem 2.5rem;
+        outline: 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem 2rem;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.2rem;
+        }
+
+        &--active {
+            background: $gray;
+        }
+    }
+
+    &__btn:active,
+    &__btn:focus,
+    &__btn:visited {
+        outline: 0;
+    }
+
+
+
+}
+
+.portfolio {
+
+    
+
+    &__item {
+        margin-bottom: 5rem;
+
+        @include media-breakpoint-down(md) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+        display: block;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__img {
+        border-radius: 5px;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: blur(2px) brightness(80%);
+        }
+    }
+
+    &__btn {
+        margin-top: -1.5rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.8rem;
+            margin-top: .5rem;
+        }
+    }
+}
+
+.work {
+    display: none;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 5px;
+    padding: 3rem;
+
+    @include media-breakpoint-down(sm) {
+        height: 90%;
+    }
+
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template-rows: max-content 1fr max-content;
+        grid-row-gap: 2rem;
+    }
+
+    &__wrap {
+        display: flex;
+        overflow: scroll;
+
+        @include media-breakpoint-down(xs) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        width: 55%;
+        margin-right: 2rem;
+
+        @include media-breakpoint-down(md) {
+            width: 45%;
+        }
+        @include media-breakpoint-down(xs) {
+            width: 60%;
+            margin: 2rem auto 1rem;
+        }
+
+    }
+
+    &__right {
+        width: 45%;
+        margin-left: 2rem;
+        overflow: scroll;
+        
+
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        @include media-breakpoint-down(md) {
+            width: 55%;
+        }
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        margin: 0;
+    }
+
+    &__img {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    &__btn {
+        color: #fff;
+        background: $black;
+        border-radius: 5px;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 1rem 3rem;
+        text-align: center;
+        display: inline-block;
+        justify-self: center;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:hover .arrow {
+            transform: translateX(4px);
+        }
+    }
+
+
+}

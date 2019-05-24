@@ -1,0 +1,24 @@
+.skills {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+.progress {
+    width: 95%;
+    height: 6rem;
+    border-radius: 100rem;
+    margin-bottom: 6rem;
+
+    @include media-breakpoint-down(md) {
+        height: 4.5rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    &-bar {
+        background: $secondary;
+    }
+}
