@@ -119,6 +119,7 @@
     &__img {
         width: 70%;
         clip-path: ellipse(43% 50% at 46% 50%);
+        -webkit-clip-path: ellipse(43% 50% at 46% 50%);
 
         @include media-breakpoint-down(md) {
             width: 80%;
