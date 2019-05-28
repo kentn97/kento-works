@@ -7174,6 +7174,8 @@ a:hover {
   max-height: 75rem;
   background-image: linear-gradient(#FFEDEC, #F5DEDD);
   border-radius: 0 0 90% 90% / 30%;
+  -webkit-border-radius: 0 0 90% 90% / 30%;
+  -moz-border-radius: 0 0 90% 90% / 30%;
   position: relative;
   margin-bottom: 6rem; }
   @media (max-width: 767.98px) {
@@ -7248,7 +7250,8 @@ a:hover {
         width: 100%; } }
   .header__img {
     width: 70%;
-    clip-path: ellipse(43% 50% at 46% 50%); }
+    clip-path: ellipse(43% 50% at 46% 50%);
+    -webkit-clip-path: ellipse(43% 50% at 46% 50%); }
     @media (max-width: 991.98px) {
       .header__img {
         width: 80%;
