@@ -1,5 +1,17 @@
 var kentoWorks = [
     {
+    name: "YONDEチラシ",
+    tag: "web",
+    img: "yonde.png",
+    github: "githubへのリンク",
+    features: `<h4 class="heading-4">こだわったポイント</h4>
+        <p>・いかにQRを読みこんでもらえるか。その一点にしぼり、全体の配置・配色を決めました。</p>
+        <p>・実際にフィードバックがもらえたりして、とてもいい経験になった</p>
+
+        <h4 class="heading-4">一言</h4>
+        <p>・初のイラレプロジェクト。初の印刷物。</p>`
+  },
+    {
         name: "じゃんけんアプリ",
         tag: "app",
         img: "janken-app.png",
